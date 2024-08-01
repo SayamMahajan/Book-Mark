@@ -1,0 +1,34 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= heading %></title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1><%= heading %></h1>
+
+    <% if (post) { %>
+      <form id="editForm" method="post" action="/api/posts/<%= post.id %>">
+        <input type="text" name="book_name" value="<%= post.book_name %>" required placeholder="Book Name">
+        <input type="text" name="name" value="<%= post.author_name %>" required placeholder="Author Name">
+        <textarea name="content" rows="10" required placeholder="Content"><%= post.content %></textarea>
+        <input type="number" name="rating" value="<%= post.rating %>" required placeholder="Rating">
+        <input type="text" name="isbn_no" value="<%= post.isbn_no %>" required placeholder="ISBN Number">
+        <button class="full-width" type="submit"><%= submit %></button>
+      </form>
+    <% } else { %>
+      <form id="newPostForm" method="post" action="/api/posts">
+        <input type="text" name="book_name" placeholder="Book Name" required>
+        <input type="text" name="author_name" placeholder="Author Name" required>
+        <textarea name="content" placeholder="Content" required rows="10"></textarea>
+        <input type="number" name="rating" placeholder="Rating" required>
+        <input type="text" name="isbn_no" placeholder="ISBN Number" required>
+        <button class="full-width" type="submit"><%= submit %></button>
+      </form>
+    <% } %>
+  </div>
+</body>
+
+</html>

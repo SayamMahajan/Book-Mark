@@ -1,0 +1,177 @@
+body, h1, h2, p, ul, li, form, input, textarea, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  p, input, textarea {
+    margin-bottom: 20px;
+  }
+  
+  small {
+    display: block;
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+  }
+  
+  a, button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.full-width {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  a, button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  a.edit, a.delete {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    width: auto; /* Ensure the width is only as wide as the content */
+  }
+  
+  a.edit {
+    background-color: #f39c12;
+  }
+  
+  a.delete {
+    background-color: #e74c3c;
+  }
+  
+  a.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  #newPostBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: #2ecc71;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #newPostBtn:hover {
+    background-color: #27ae60;
+  }
+  
+  .book-cover {
+    margin-left: 20px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #sortPostsBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: #3498db;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #sortPostsBtn:hover {
+    background-color: #2980b9;
+  }
+  
+  li .post-rating {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    width: auto; /* Ensure the width is only as wide as the content */
+  }
+  
+  li .post-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
