@@ -1,10 +1,11 @@
 <h1>Book Review App</h1>
-<p>This is a simple book review application built using Node.js, Express, PostgreSQL, and EJS for server-side rendering.</p>
+<p>This is a simple book review application built using Node.js, Express, PostgreSQL, and EJS for server-side rendering. For books cover , open library api is used</p>
 
 <h2>Usage</h2>
 <h3>Home Page:</h3>
 <ul>
 <li>Lists all book reviews.</li>
+<li>Using open library api to display book's cover.</li>
 <li>Provides a button to sort reviews by rating.</li>
 </ul>
 
